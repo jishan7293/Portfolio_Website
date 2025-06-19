@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a, nav .btn {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover, nav .btn:hover {
+  color: #0af;
+}
+
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #001f3f, #0074D9);
+  color: #eee;
+}
+
+.highlight {
+  color: #00e1ff;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeIn 1s ease-in;
+}
+
+.skill {
+  margin: 20px 0;
+}
+
+.progress {
+  background: #ddd;
+  height: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: #0af;
+}
+
+.project-card {
+  background: #333;
+  color: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  background: #0af;
+  color: #fff;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 12px 25px;
+  background: #0af;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0057b7;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #111;
+  color: #aaa;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background: #0af;
+  color: #fff;
+  border: none;
+  padding: 14px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#topBtn:hover {
+  background: #0057b7;
+}
+
+.dark-mode {
+  background: #111;
+  color: #ccc;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
